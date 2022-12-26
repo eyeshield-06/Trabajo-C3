@@ -166,11 +166,10 @@ SEXP sumsquaresv3(SEXP x){
     return aux;
 }
 ```
-<div style="background-color: rgb(50, 50, 50);">
+
 ```sh
 R CMD SHLIB fun.c
 ```
-</div>
 
 ##### test.R
 
@@ -179,7 +178,6 @@ source("fun.R")
 dyn.load("fun.so")
 
 sumsquaresv3(1, 2, 3, 4, 5)
-
 ```
 ## Ejercicio 3 
 
