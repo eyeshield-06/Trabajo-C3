@@ -47,7 +47,7 @@ SEXP Cdist(SEXP x){
     int nr = nrows(x), nc = ncols(x);
     int diag = 0;
     R_xlen_t N;
-    N = (R_xlen_t)nr * (nr-1)/2;
+    N = (R_xlen_t)nr * (nr-1)/2; // suma primeros n-numeros
     PROTECT(ans = allocVector(REALSXP, N));
     if(TYPEOF(x) != REALSXP)
         x = coerceVector(x, REALSXP);
