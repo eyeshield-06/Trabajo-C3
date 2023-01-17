@@ -1,9 +1,16 @@
 source("fun.R")
 dyn.load("fun.so")
-a = as.matrix(iris[1:10, -5])
 
-for (i in 1:10)
-    a = rbind(a, a)
+a <- rnorm(600000)
+b <- rnorm(600000)
+c <- rnorm(600000)
+d <- rnorm(600000)
+e <- rnorm(600000)
+f <- rnorm(600000)
+g <- rnorm(600000)
 
-library(microbenchmark)
-microbenchmark(cor(a), CORS(a))
+D <- cbind(a, b, c, d, e, f, g)
+
+system.time(cor(D))
+
+system.time(CORS(D))
