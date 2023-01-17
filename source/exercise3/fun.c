@@ -42,7 +42,7 @@ void R_distance(double *x, int *nr, int *nc, double *d, int *diag){
 
 #include <Rinternals.h>
 
-SEXP Cdist(SEXP x){
+SEXP Cdist(SEXP x, SEXP attrs){
     SEXP ans;
     int nr = nrows(x), nc = ncols(x);
     int diag = 0;
@@ -53,6 +53,13 @@ SEXP Cdist(SEXP x){
         x = coerceVector(x, REALSXP);
     PROTECT(x);
     R_distance(REAL(x), &nr, &nc, REAL(ans), &diag);
+
+    // to matrix
+    SEXP names = getAttrib(attrs, R_NamesSymbol);
+    for (int i = 0; i < LENGTH(attrs); i++)
+	setAttrib(ans, install(translateChar(STRING_ELT(names, i))),
+		  VECTOR_ELT(attrs, i));
+
     UNPROTECT(2);
     return ans;
 }

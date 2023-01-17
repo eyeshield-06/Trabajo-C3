@@ -3,13 +3,11 @@
 \usepackage{amsmath}
 \usepackage{fancybox}
 \usepackage{graphicx}
+\usepackage{hyperref}
 %%%%%%
 % no incluyan mas paquetes hasta que los vayan a ocupar.
 % de lo contrario compila mas lento.
 %%%%%%
-\title{Trabajo Computacion Estadistica III}
-\author{Equipo 7}
-\date{\today}
 \begin{document}
     %%%%%%%%%%
     %% Portada
@@ -47,28 +45,57 @@
     \listoftables
 
     \section{Introduccion}
+    
+    Como en R existen funciones que requieren mucho tiempo de ejecución como por ejemplo la clusterización se busca una alternativa para reducir este tiempo, de esta manera nacen funciones como .C, .Call y .External dado que R contiene lenguaje C es posible utilizar dichas funciones.
+    Se busca conocer las funciones anterior mente mencionadas debido a sus diferencias en estructura y complejidad de uso. 
 
     \section{Funciones \textit{.C}, \textit{.Call} y \textit{.External}}
 
     \subsection{\textit{.C}}
     
+    Es una función que conecta C/C++ con R condicionada a los argumentos y parámetros que le entreguemos a la función desde R \textbf{NO} serán reconocidos inmediatamente por el lenguaje C, por ende debemos especificar y transformar los argumentos con funciones como \textbf{as.integer()}, \textbf{as.logical()}, entre otras. Esta función no retorna valores.
+    
     \subsection{\textit{.Call}}
     
+    Es una función que conecta C/C++ con R condicionada a que los argumentos y parámetros que le entreguemos a la función desde R \textbf{SI} serán reconocidos inmediatamente por el lenguaje C, permitiendo entregar argumentos sin transformación y recibe todo tipo de argumentos, permite retornar valores.
+    
     \subsection{\textit{.External}}
+
+    Es una función que conecta C/C++ con R condicionada a que los argumentos y parámetros que le entreguemos a la función desde R \textbf{SI} serán reconocidos inmediatamente por el lenguaje C,recibe solo un tipo de argumento que es una  \textit{pairlist}, permite retornar valores.
 
     \section{Funcion: Suma de Cuadrados}
 
     \subsection{Algoritmo}
+
+    Implementacion de formula de Calculo,
+
+    \begin{equation*}
+        \sum_{i = 1}^{n} x_{i}^{2}
+    \end{equation*}
     
+    Donde $n$ corresponde a la longitud del vector.
+
     \subsection{\textit{R}}
-    
+
+    \href{https://github.com/eyeshield-06/Trabajo-C3/blob/master/source/exercise2/a/function.R}{source}
+
     \subsection{\textit{C}}
+
+    \href{https://github.com/eyeshield-06/Trabajo-C3/tree/master/source/exercise2/b}{folder}
 
     \subsection{Test}
     
     \section{Optimizacion funcion \textit{dist}}
 
     \subsection{Algoritmo}
+
+    Dados dos vectores de igual longitud, la componente $ij$ de la matrix de distacia  $D$, es
+
+    \begin{equation*}
+        D_{ij} = \sqrt{ \sum_{k = 1}^{n} (X_{ik} - Y_{jk})^2 }
+    \end{equation*}
+
+    Donde $n$ es la dimension del espacio vectorial.
     
     \subsection{\textit{R}}
     

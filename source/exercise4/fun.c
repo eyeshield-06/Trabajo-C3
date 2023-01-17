@@ -58,11 +58,11 @@ static void CORS(double *x, int *nr, int *nc, double *d, double *sigma2, double 
 
 #include <Rinternals.h>
 
-SEXP CoR(SEXP x){
-    SEXP ans, means, vars;
+SEXP CoR(SEXP x, SEXP attrs){
+    SEXP ans, means, vars, ind;
     int nr = nrows(x), nc = ncols(x);
     R_xlen_t N;
-    N = (R_xlen_t)nc * (nc - 1)/2;
+    N = (R_xlen_t)nc * (nc + 1)/2;
     PROTECT(ans = allocVector(REALSXP, N));
     PROTECT(means = allocVector(REALSXP, nc));
     PROTECT(vars = allocVector(REALSXP, nc));
@@ -73,7 +73,7 @@ SEXP CoR(SEXP x){
     MEANS(REAL(x), &nr, &nc, REAL(means));
     VARS(REAL(x), &nr, &nc, REAL(vars), REAL(means));
     CORS(REAL(x), &nr, &nc, REAL(ans), REAL(vars), REAL(means));
-
-    UNPROTECT(4);
+    
+    UNPROTECT(4);// +1
     return ans; 
 }
