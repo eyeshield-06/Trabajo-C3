@@ -1,8 +1,6 @@
----
-title: Trabajo Computacion Estadistica III
-author: Rudy Miranda
-date: today
----
+# Importante
+
+revisar [r-source](https://github.com/wch/r-source/tree/e5b21d0397c607883ff25cca379687b86933d730). Scripts funciones nativas de R de paquetes tales como `stats`, `base`, entre otros.
 
 ## Table Of Contents
 - [Table Of Contents](#table-of-contents)
@@ -274,7 +272,13 @@ distancia <- function(x) {
 
 Los scripts los encontraran [aqui](https://github.com/eyeshield-06/Trabajo-C3/tree/master/source/exercise3).
 
+### Benchmark
 
+!(imagen1)[/source/exercise3/benchmark.png]
 
 
 ## Ejercicio 4
+
+### Benchmark
+
+!(imagen2)[/source/exercise4/benchmark.png]
