@@ -282,6 +282,12 @@ Los scripts los encontraran [aqui](https://github.com/eyeshield-06/Trabajo-C3/tr
 
 ## Ejercicio 4
 
+### Handicap
+
+No logramos retornar el resultado mediante una matriz. Ademas omitimos los elementos de la diagonal principal (unos), solo dejando los que estan bajo esta.
+
+![imagen3](source/exercise4/handicap.png)
+
 ### Benchmark
 
 ![imagen2](source/exercise4/benchmark.png)

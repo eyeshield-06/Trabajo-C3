@@ -62,7 +62,7 @@ SEXP CoR(SEXP x, SEXP attrs){
     SEXP ans, means, vars, ind;
     int nr = nrows(x), nc = ncols(x);
     R_xlen_t N;
-    N = (R_xlen_t)nc * (nc + 1)/2;
+    N = (R_xlen_t)nc * (nc - 1)/2;
     PROTECT(ans = allocVector(REALSXP, N));
     PROTECT(means = allocVector(REALSXP, nc));
     PROTECT(vars = allocVector(REALSXP, nc));
