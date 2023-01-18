@@ -3,32 +3,35 @@
 revisar [r-source](https://github.com/wch/r-source/tree/e5b21d0397c607883ff25cca379687b86933d730). Scripts funciones nativas de R de paquetes tales como `stats`, `base`, entre otros.
 
 ## Table Of Contents
-- [Table Of Contents](#table-of-contents)
-- [Ejercicio 1](#ejercicio-1)
-  - [*.C*](#c)
-  - [*.Call*](#call)
-  - [*.External*](#external)
-- [Ejercicio 2](#ejercicio-2)
-  - [Solo con *R*](#solo-con-r)
-  - [Con *C*](#con-c)
-    - [Metodo 1: *.C*](#metodo-1-c)
-      - [fun.R](#funr)
-      - [fun.c](#func)
-      - [test.R](#testr)
-    - [Metodo 2: *.Call*](#metodo-2-call)
-      - [fun.R](#funr-1)
-      - [fun.c](#func-1)
-      - [test.R](#testr-1)
-    - [Metodo 3: *.External*](#metodo-3-external)
-      - [fun.R](#funr-2)
-      - [fun.c](#func-2)
-      - [test.R](#testr-2)
-- [Ejercicio 3](#ejercicio-3)
-  - [Implementacion de ***R***](#implementacion-de-r)
-    - [Script](#script)
-  - [Nuestra Implementacion](#nuestra-implementacion)
-    - [Script](#script-1)
-- [Ejercicio 4](#ejercicio-4)
+- [Importante](#importante)
+  - [Table Of Contents](#table-of-contents)
+  - [Ejercicio 1](#ejercicio-1)
+    - [*.C*](#c)
+    - [*.Call*](#call)
+    - [*.External*](#external)
+  - [Ejercicio 2](#ejercicio-2)
+    - [Solo con *R*](#solo-con-r)
+    - [Con *C*](#con-c)
+      - [Metodo 1: *.C*](#metodo-1-c)
+        - [fun.R](#funr)
+        - [fun.c](#func)
+        - [test.R](#testr)
+      - [Metodo 2: *.Call*](#metodo-2-call)
+        - [fun.R](#funr-1)
+        - [fun.c](#func-1)
+        - [test.R](#testr-1)
+      - [Metodo 3: *.External*](#metodo-3-external)
+        - [fun.R](#funr-2)
+        - [fun.c](#func-2)
+        - [test.R](#testr-2)
+  - [Ejercicio 3](#ejercicio-3)
+    - [Implementacion de ***R***](#implementacion-de-r)
+      - [Script](#script)
+    - [Nuestra Implementacion](#nuestra-implementacion)
+      - [Script](#script-1)
+    - [Benchmark](#benchmark)
+  - [Ejercicio 4](#ejercicio-4)
+    - [Benchmark](#benchmark-1)
 
 ## Ejercicio 1
 
@@ -274,11 +277,11 @@ Los scripts los encontraran [aqui](https://github.com/eyeshield-06/Trabajo-C3/tr
 
 ### Benchmark
 
-!(imagen1)[/source/exercise3/benchmark.png]
+!(imagen1)[source/exercise3/benchmark.png]
 
 
 ## Ejercicio 4
 
 ### Benchmark
 
-!(imagen2)[/source/exercise4/benchmark.png]
+!(imagen2)[source/exercise4/benchmark.png]
