@@ -277,11 +277,11 @@ Los scripts los encontraran [aqui](https://github.com/eyeshield-06/Trabajo-C3/tr
 
 ### Benchmark
 
-!(imagen1)[source/exercise3/benchmark.png]
+![imagen1](source/exercise3/benchmark.png)
 
 
 ## Ejercicio 4
 
 ### Benchmark
 
-!(imagen2)[source/exercise4/benchmark.png]
+![imagen2](source/exercise4/benchmark.png)
