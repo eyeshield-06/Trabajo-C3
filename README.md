@@ -31,6 +31,7 @@ revisar [r-source](https://github.com/wch/r-source/tree/e5b21d0397c607883ff25cca
       - [Script](#script-1)
     - [Benchmark](#benchmark)
   - [Ejercicio 4](#ejercicio-4)
+    - [Handicap](#handicap)
     - [Benchmark](#benchmark-1)
 
 ## Ejercicio 1
